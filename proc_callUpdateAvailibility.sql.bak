@@ -1,0 +1,11 @@
+SET SERVEROUTPUT ON;
+DECLARE
+	pid int;
+	stk int;
+	
+BEGIN
+    pid:='&productid';
+    stk:='&stock';
+	UPDATESTOCKS(pid,stk);
+END;
+/
